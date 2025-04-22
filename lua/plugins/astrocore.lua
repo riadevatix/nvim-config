@@ -26,7 +26,7 @@ return {
     options = {
       opt = { -- vim.opt.<key>
         relativenumber = false, -- sets vim.opt.relativenumber
-        number = false, -- sets vim.opt.number
+        -- number = false, -- sets vim.opt.number
         spell = false, -- sets vim.opt.spell
         foldenable = false,
         signcolumn = "no",
@@ -34,7 +34,7 @@ return {
         -- signcolumn = "auto", -- sets vim.opt.signcolumn to auto
         wrap = false, -- sets vim.opt.wrap
         showtabline = 0,
-        cmdheight = 1,
+        cmdheight = 0,
         -- expandtab = true,
         -- tabstop = 4,
         -- shiftwidth = 4,
@@ -72,6 +72,11 @@ return {
             )
           end,
           desc = "Pick to close",
+        },
+
+        ["<Leader>f/"] = {
+          function() require("snacks.picker").lines() end,
+          desc = "Fuzzy search in current buffer",
         },
         -- tables with just a `desc` key will be registered with which-key if it's installed
         -- this is useful for naming menus

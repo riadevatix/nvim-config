@@ -12,8 +12,10 @@ return {
     -- colorscheme = "kanagawa-dragon",
     -- colorscheme = "kanagawa",
     -- colorscheme = "terafox",
-    -- colorscheme = "catppuccin-frappe",
-    colorscheme = "minicyan",
+    -- colorscheme = "miniwinter",
+    colorscheme = "catppuccin",
+    -- colorscheme = "minicyan",
+    -- colorscheme = "randomhue",
     -- AstroUI allows you to easily modify highlight groups easily for any and all colorschemes
     highlights = {
       init = { -- this table overrides highlights in all themes
