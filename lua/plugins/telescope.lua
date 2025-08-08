@@ -85,15 +85,15 @@ return {
           show_line = false,
           -- theme = "ivy",
         },
-        -- find_files = {
-        --   theme = "ivy",
-        -- },
-        -- live_grep = {
-        --   theme = "ivy",
-        -- },
-        -- current_buffer_fuzzy_find = {
-        --   theme = "ivy",
-        -- },
+        find_files = {
+          theme = "ivy",
+        },
+        live_grep = {
+          theme = "ivy",
+        },
+        current_buffer_fuzzy_find = {
+          theme = "ivy",
+        },
       },
       -- sort_lastused
       -- defaults = {

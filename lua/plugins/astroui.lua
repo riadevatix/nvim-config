@@ -12,9 +12,11 @@ return {
     -- colorscheme = "kanagawa-dragon",
     -- colorscheme = "kanagawa",
     -- colorscheme = "terafox",
+    -- colorscheme = "default",
     -- colorscheme = "miniwinter",
-    colorscheme = "catppuccin",
+    colorscheme = "gruvbox",
     -- colorscheme = "minicyan",
+    -- colorscheme = "rose-pine",
     -- colorscheme = "randomhue",
     -- AstroUI allows you to easily modify highlight groups easily for any and all colorschemes
     highlights = {

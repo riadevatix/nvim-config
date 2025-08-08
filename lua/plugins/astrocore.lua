@@ -16,6 +16,17 @@ return {
       diagnostics_mode = 3, -- diagnostic mode on start (0 = off, 1 = no signs/virtual text, 2 = no virtual text, 3 = on)
       highlighturl = true, -- highlight URLs at start
       notifications = true, -- enable notifications at start
+      snack = {
+        picker = {
+          -- layout_strategy = "bottom_pane",
+          layout_config = {
+            height = 15, -- similar to ivy height
+            prompt_position = "top",
+          },
+          -- sorting_strategy = "ascending", -- like ivy
+          -- previewer = false,
+        },
+      },
     },
     -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
     diagnostics = {

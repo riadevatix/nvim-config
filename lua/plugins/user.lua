@@ -94,6 +94,7 @@ return {
   -- You can also easily customize additional setup of plugins that is outside of the plugin's setup call
   {
     "L3MON4D3/LuaSnip",
+    enabled = false,
     config = function(plugin, opts)
       require "astronvim.plugins.configs.luasnip"(plugin, opts) -- include the default astronvim config that calls the setup call
       -- add more custom luasnip configuration such as filetype extend or custom snippets
@@ -131,16 +132,17 @@ return {
       )
     end,
   },
-  {
-    "rbong/vim-flog",
-    lazy = true,
-    cmd = { "Flog", "Flogsplit", "Floggit" },
-    dependencies = {
-      "tpope/vim-fugitive",
-    },
-  },
+  -- {
+  --   "rbong/vim-flog",
+  --   lazy = true,
+  --   cmd = { "Flog", "Flogsplit", "Floggit" },
+  --   dependencies = {
+  --     "tpope/vim-fugitive",
+  --   },
+  -- },
   {
     "nvim-notify",
+    enabled = false,
     config = function()
       require("notify").setup {
         background_colour = "#000000",
